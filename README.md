@@ -25,3 +25,13 @@ Each record should stay practical, readable, and useful for future tool building
 - Favor tools that feel polished, beautiful, and shareable.
 - Include free online publishing options whenever a tool idea can be built.
 - Do not modify computer configuration, install dependencies, delete files, or change unrelated projects.
+
+## Cloudflare Pages Settings
+
+Use these settings when publishing this repository:
+
+- Build command: leave empty
+- Build output directory: `public`
+- Production branch: `main`
+
+Do not publish the repository root directly, because it can expose Git metadata from the deployment environment.
