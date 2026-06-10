@@ -1,40 +1,39 @@
 # Product Design Learning Log
 
-This folder is the live reading board for the automated product-design learning task.
+This repository is the publishing directory for the automated product-design learning workflow.
 
 ## Latest Records
 
-New automation runs should append a short entry here and, when useful, create a dated note under `records/`.
-
+- 2026-06-10 18:47: 先补信息差，再谈 AI 代采成交。见 `public/records/2026-06-10-1847.html`。
 - 2026-06-10 16:08: 供应商可信表达，不是把证书堆满。见 `public/records/2026-06-10-1608.html`。
 - 2026-06-10 15:31: 把询盘做深：B2B 跨境 AI 的第一落点。见 `public/records/2026-06-10-1531.html`。
 
 ## Record Format
 
-Each record should stay practical, readable, and useful for future tool building:
+Each new note should stay practical and scenario-driven:
 
-- What changed in product/design/UX/desktop tools
+- What changed in product, UX, B2B commerce, or desktop tooling
 - Why it matters to real users
-- What product or tool idea it suggests
-- Experience highlight
-- Visual/design direction
-- Free publishing or sharing path
-- Risks and quick validation method
+- Which product opportunity it suggests
+- What should be validated next
+- How the idea could be shared online for free
 
-## Current Preferences
+## Current Constraints
 
-- Prefer creative ideas grounded in real user needs.
-- Keep the language professional but easy to understand.
-- Favor tools that feel polished, beautiful, and shareable.
-- Include free online publishing options whenever a tool idea can be built.
-- Do not modify computer configuration, install dependencies, delete files, or change unrelated projects.
+- Only write inside this repository
+- Do not modify system configuration
+- Do not install dependencies
+- Do not delete or move user files
+- Do not change unrelated project code
 
-## Cloudflare Pages Settings
+## Static Publishing
 
-Use these settings when publishing this repository:
+Recommended deployment settings:
 
 - Build command: leave empty
 - Build output directory: `public`
 - Production branch: `main`
+- Deploy command: `npx wrangler deploy --assets public`
+- Non-production branch deploy command: `npx wrangler versions upload --assets public`
 
-Do not publish the repository root directly, because it can expose Git metadata from the deployment environment.
+Do not publish the repository root directly.

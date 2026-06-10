@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>先补信息差，再谈 AI 代采成交</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f0e8;
+      --paper: #fffdf8;
+      --text: #212121;
+      --muted: #666055;
+      --line: #ddd3c4;
+      --accent: #165d59;
+      --accent-soft: #dfeeea;
+      --warm: #fff1dc;
+      --ink: #264846;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.82), transparent 34%),
+        linear-gradient(180deg, #f7f3eb 0%, var(--bg) 100%);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+      line-height: 1.78;
+    }
+
+    main {
+      width: min(940px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 24px 0 60px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 22px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    article {
+      padding: 24px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      box-shadow: 0 10px 26px rgba(29, 37, 32, 0.05);
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(30px, 7vw, 46px);
+      line-height: 1.12;
+    }
+
+    .meta {
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .summary {
+      margin: 18px 0 30px;
+      padding: 16px;
+      border-radius: 10px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(22, 93, 89, 0.1);
+    }
+
+    h2 {
+      margin: 34px 0 14px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      font-size: 24px;
+    }
+
+    h3 {
+      margin: 22px 0 8px;
+      font-size: 19px;
+    }
+
+    p { margin: 8px 0; }
+    ol, ul { padding-left: 22px; }
+    li { margin: 8px 0; }
+
+    .card, .idea {
+      margin: 18px 0;
+      padding: 16px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .idea {
+      background: var(--warm);
+      border-color: #f0dec0;
+    }
+
+    .card h3, .idea h3 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    .label {
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 560px) {
+      main {
+        width: min(100% - 20px, 940px);
+        padding-top: 18px;
+      }
+
+      article {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="../index.html">返回首页</a>
+    <article>
+      <h1>先补信息差，再谈 AI 代采成交</h1>
+      <p class="meta">产品设计自动学习记录｜2026-06-10 18:47｜第一人称产品思考笔记</p>
+
+      <div class="summary">
+        <p><span class="label">我今天最该带走的判断：</span>AI 在采购场景里最先该做的，不是替买家直接下单，而是先把“判断前置需要的信息差”补齐。B2B 跨境尤其如此。</p>
+        <p>如果我是平台产品经理，我会把第一阶段目标定成“让买家更快形成一份高质量询盘/采购判断”，而不是急着把 agent 做成全自动成交按钮。</p>
+      </div>
+
+      <h2>我今天最该带走的判断</h2>
+      <ol>
+        <li>AI 购物协议和购物助手的快速推进，说明搜索正在变成代办；但在 B2B 跨境里，真正先被替代的不是采购决策，而是繁琐的信息补齐与候选筛选。</li>
+        <li>买家真正缺的不是更多供应商，而是更少的判断噪音。平台的机会是把 MOQ、交期、认证、定制能力、历史经验这些关键信息整理成可比较的证据。</li>
+        <li>供应商经营端会越来越像“一个人也能开工”的 AI 操作台，因此平台不该只给流量，也要给表达、跟进、报价准备的经营助手。</li>
+        <li>面向 AI agent 的产品设计，会反过来逼我们把界面和流程做得更显式、更结构化；这对桌面工具和 B2B SaaS 都是机会。</li>
+        <li>第一版落地不要追求全自动闭环，先做“询盘准备层”更稳：帮买家形成需求、帮供应商组织回应、帮平台保留证据与风控边界。</li>
+      </ol>
+
+      <h2>我最值得关注的资料与第一人称产品笔记</h2>
+
+      <div class="card">
+        <h3>1. Google 把买按钮塞进 Gemini，我会先想到 B2B 采购不会按这个顺序成交</h3>
+        <p><span class="label">来源链接：</span><a href="https://www.theverge.com/news/860446/google-ai-shopping-standard-buy-button-gemini">The Verge｜Google brings buy buttons to Gemini and AI search</a></p>
+        <p><span class="label">我看到什么：</span>Google 在 2026 年 1 月推出 Universal Commerce Protocol，把 AI 搜索、对话、结账串起来，核心逻辑是让 agent 能直接代表用户完成购物旅程。</p>
+        <p><span class="label">我联想到什么业务场景：</span>这件事如果放到 B2B 跨境，不会先落到“立即购买”，而会先落到“生成可发出的采购请求”。买家往往还没到付款那一步，他更常见的状态是：我知道自己大概要什么，但我不知道该怎么问、该问谁、要补哪些关键信息。</p>
+        <p><span class="label">它可能带来的产品机会：</span>做一个“AI 询盘准备层”。用户用自然语言说需求，系统先反问并补齐：应用场景、目标市场、认证要求、MOQ 预期、样品需求、交期底线、预算弹性、是否需要 OEM/ODM。最后输出标准化 RFQ，而不是直接去找供应商报一个模糊价格。</p>
+        <p><span class="label">我会怎么验证：</span>拿 30 条历史低质量询盘做回放，看看如果中间插入 3-5 个补问步骤，能否显著提升供应商愿意回复率、首次报价完整度和二次沟通率。</p>
+      </div>
+
+      <div class="card">
+        <h3>2. Amazon 的购物助手越像“代办”，我越警惕 B2B 里先要解决授权和边界</h3>
+        <p><span class="label">来源链接：</span><a href="https://www.theverge.com/ai-artificial-intelligence/929457/amazon-announces-alexa-for-shopping-ai-assistant-rufus">The Verge｜Alexa is moving into Amazon.com</a></p>
+        <p><span class="label">我看到什么：</span>Amazon 把 AI 助手往搜索结果、比价、补货、自动购买规则里推，说明消费电商已经在验证“用户愿不愿意把动作交给 AI”。</p>
+        <p><span class="label">我联想到什么业务场景：</span>B2B 跨境采购不只是找东西，还涉及内部审批、样品试错、账期、海关合规、付款风控、物流协调。买家不一定反感 AI 帮忙，但他一定会在意：哪些动作 AI 可以替我做，哪些动作必须我确认。</p>
+        <p><span class="label">它可能带来的产品机会：</span>把采购助手拆成三级能力。第一级只做信息整理，第二级做候选推荐与报价草案，第三级才是触发样品、正式询盘或支付动作。这样更符合企业采购的心理安全边界。</p>
+        <p><span class="label">我会怎么验证：</span>访谈 5-8 位有真实采购职责的用户，画出他们愿意授权给 AI 的动作清单，再与平台现有流程匹配，看先做哪一级最有接受度。</p>
+      </div>
+
+      <div class="card">
+        <h3>3. Alibaba.com 的“单人公司”提醒我：供应商侧首先要补的是经营协助，不是更复杂后台</h3>
+        <p><span class="label">来源链接：</span><a href="https://www.businessinsider.com/ai-agents-one-person-companies-china-openclaw-alibaba-president-2026-3">Business Insider｜China's one-person companies have exploded</a></p>
+        <p><span class="label">我看到什么：</span>2026 年 3 月的报道里，Alibaba.com 总裁提到平台上 30% 到 40% 用户是“单人公司”或接近这个形态，AI agent 正在帮助他们处理上架、客服、税务等重复工作。</p>
+        <p><span class="label">我联想到什么业务场景：</span>很多供应商不是没有业务能力，而是没有足够人手把能力讲清、把买家跟进做稳。B2B 平台过去太喜欢把后台做成信息表单，但真正缺的是“懂外贸经营语境的助手”。</p>
+        <p><span class="label">它可能带来的产品机会：</span>做“供应商询盘回应台”：自动从商品、认证、历史订单和公司介绍里提炼可回答素材，帮业务员生成首轮回应框架、追问建议和风险提醒，而不是只给一个聊天输入框。</p>
+        <p><span class="label">我会怎么验证：</span>挑 10 个小团队供应商，比较手写首轮回复和工具辅助首轮回复的发送速度、完整度、买家继续回复率。</p>
+      </div>
+
+      <div class="card">
+        <h3>4. 面向 computer-use agent 的界面研究，反过来在提醒我：B2B 流程必须更显式</h3>
+        <p><span class="label">来源链接：</span><a href="https://arxiv.org/abs/2605.02729">arXiv｜Augmenting Interface Usability Heuristics for Reliable Computer-Use Agents</a></p>
+        <p><span class="label">我看到什么：</span>2026 年 5 月的研究指出，传统人类可用性启发式如果进一步做显式化、结构化，会让 computer-use agent 更可靠，而且不一定伤害人的体验。</p>
+        <p><span class="label">我联想到什么业务场景：</span>这让我想到 B2B 后台很多关键节点其实都不够显式，比如询盘状态、报价状态、样品状态、待确认字段、风险提示。人能勉强看懂，但系统不容易接手，团队协作也容易误解。</p>
+        <p><span class="label">它可能带来的产品机会：</span>无论做采购助手还是桌面小工具，界面上都要把状态、下一步动作、证据来源、不可逆操作写清楚。这样未来不只是人好用，agent 也更容易可靠参与。</p>
+        <p><span class="label">我会怎么验证：</span>选一个现有复杂流程，比如 RFQ 回复或样品跟进，用“状态显式化”原则重做原型，再用可用性测试观察用户是否更少漏步、是否更敢让 AI 帮忙。</p>
+      </div>
+
+      <div class="card">
+        <h3>5. 关于 computer-use agent UX 的设计空间研究，让我更确认“解释权”是产品的一部分</h3>
+        <p><span class="label">来源链接：</span><a href="https://arxiv.org/abs/2602.07283">arXiv｜Mapping the Design Space of User Experience for Computer Use Agents</a></p>
+        <p><span class="label">我看到什么：</span>2026 年 2 月的研究把用户控制、可解释性、心理模型和风险执行放到同一个设计空间里，强调不同场景下用户想要的代理参与程度并不一样。</p>
+        <p><span class="label">我联想到什么业务场景：</span>这件事如果放到 B2B 跨境里，我不能只问“AI 能不能做”，还要问“用户是否理解它为什么这么做”。比如为什么推荐这个供应商、为什么提醒这个认证、为什么先不建议立即下单。</p>
+        <p><span class="label">它可能带来的产品机会：</span>给采购助手加“判断解释卡片”，明确展示建议来自哪些证据：买家需求字段、供应商能力字段、历史成交规律、风险规则。这样推荐才更像协助，不像黑箱。</p>
+        <p><span class="label">我会怎么验证：</span>做 A/B 原型，一版只有推荐结果，一版带解释卡片，对比用户信任度、采纳率和质疑点。</p>
+      </div>
+
+      <div class="card">
+        <h3>6. UCP 这种协议化趋势，也在逼桌面效率工具从“收纳信息”转向“组织动作”</h3>
+        <p><span class="label">来源链接：</span><a href="https://arxiv.org/abs/2606.05043">arXiv｜Strabo: Declarative Specification and Implementation of Agentic Interaction Protocols</a></p>
+        <p><span class="label">我看到什么：</span>2026 年 6 月的研究把 UCP 这类 agent 交互协议进一步形式化，说明行业已经不满足于“让 AI 会聊”，而是在想“让 AI 可靠执行”。</p>
+        <p><span class="label">我联想到什么业务场景：</span>桌面工具也会经历类似变化。未来不是做更多笔记容器，而是做“任务协议层”：一条采购需求从记录、补问、发出、跟进，到交付节点，每一步都能被工具组织起来。</p>
+        <p><span class="label">它可能带来的产品机会：</span>做轻量桌面工作台，不求大而全，但把一个高频流程做成可接手、可追踪、可解释的动作流。</p>
+        <p><span class="label">我会怎么验证：</span>从一个最短链路流程开始，例如“收到需求片段后整理成正式询盘”，观察用户是否愿意把日常任务交给这种结构化工具而不是继续在微信、表格、文档里来回切。</p>
+      </div>
+
+      <h2>我会提炼的 4 个趋势</h2>
+
+      <div class="card">
+        <h3>趋势 1：搜索正在变成代理式代办</h3>
+        <p><span class="label">对 B2B 跨境电商意味着什么：</span>平台不该只优化检索结果页，而要优化“从模糊需求到正式询盘”的过渡层。</p>
+        <p><span class="label">对 SaaS 意味着什么：</span>产品会从信息系统变成动作系统，重点是授权边界、流程状态和审计记录。</p>
+        <p><span class="label">对桌面办公工具意味着什么：</span>小工具更值得做成一步到位的任务助手，而不是多一个整理面板。</p>
+      </div>
+
+      <div class="card">
+        <h3>趋势 2：AI 价值开始前移到“补信息差”</h3>
+        <p><span class="label">对 B2B 跨境电商意味着什么：</span>采购最痛的往往是前期信息不完整，不是最后一公里下单。谁先补齐关键字段，谁就更接近真实转化。</p>
+        <p><span class="label">对 SaaS 意味着什么：</span>问答式录入、自动补问、缺失项提醒会比单纯生成文案更有业务价值。</p>
+        <p><span class="label">对桌面办公工具意味着什么：</span>用户需要的是“下一步缺什么”，而不是“我帮你写了一段看起来不错的话”。</p>
+      </div>
+
+      <div class="card">
+        <h3>趋势 3：界面要同时服务人和 agent</h3>
+        <p><span class="label">对 B2B 跨境电商意味着什么：</span>订单、询盘、样品、认证、交期等状态必须更结构化，后续平台才能真正引入可靠 agent。</p>
+        <p><span class="label">对 SaaS 意味着什么：</span>显式状态、来源标记、可逆操作提示会从“体验细节”变成“系统能力基础设施”。</p>
+        <p><span class="label">对桌面办公工具意味着什么：</span>越短链、越显式的小工具，越容易被用户信任并反复打开。</p>
+      </div>
+
+      <div class="card">
+        <h3>趋势 4：一人团队经营能力会继续被放大</h3>
+        <p><span class="label">对 B2B 跨境电商意味着什么：</span>平台要重视“小而强”的供应商经营工具，不只是给大商家更复杂后台。</p>
+        <p><span class="label">对 SaaS 意味着什么：</span>“助手型产品”会比“系统型产品”更容易先切进去，因为它更贴近单人高频任务。</p>
+        <p><span class="label">对桌面办公工具意味着什么：</span>很多工具应该按“一个人完成一条闭环任务”来设计，而不是按组织架构去设计。</p>
+      </div>
+
+      <h2>发散性思考</h2>
+
+      <div class="idea">
+        <h3>1. 采购需求补问器</h3>
+        <p><span class="label">真实场景：</span>买家只有一句“我要找可降解外卖盒供应商”，但真正发询盘前缺一堆条件。</p>
+        <p><span class="label">用户痛点：</span>不知道该问什么，导致供应商回不准、自己也比不动。</p>
+        <p><span class="label">工具形态：</span>网页表单加对话式补问，最后产出 RFQ 卡片。</p>
+        <p><span class="label">体验亮点：</span>每个追问都附一句“为什么这个问题会影响报价/交期/合规”。</p>
+        <p><span class="label">设计美感方向：</span>像一张干净的采购策划板，卡片式层级清楚，避免聊天气泡堆满屏幕。</p>
+        <p><span class="label">免费线上发布/分享方式：</span>纯静态前端可部署到 Cloudflare Pages 或 Workers Assets；表单结果导出 Markdown 或邮件正文。</p>
+        <p><span class="label">验证方法：</span>找采购同事或外贸销售，用真实需求跑 20 次，看输出是否更容易被接单方理解。</p>
+      </div>
+
+      <div class="idea">
+        <h3>2. 供应商首轮回复构建器</h3>
+        <p><span class="label">真实场景：</span>供应商收到询盘后，常常不知道第一封回信该如何既专业又不越界。</p>
+        <p><span class="label">用户痛点：</span>回得慢、漏关键信息、承诺过头或语气太模板。</p>
+        <p><span class="label">工具形态：</span>桌面或网页侧边台，输入询盘内容后自动生成回复框架和追问建议。</p>
+        <p><span class="label">体验亮点：</span>把“可直接说”“需要确认后说”“不建议承诺”分层显示。</p>
+        <p><span class="label">设计美感方向：</span>偏编辑器感，米色底配深绿强调，像一块稳重的商务校对板。</p>
+        <p><span class="label">免费线上发布/分享方式：</span>可先做公开 demo 页；也能用 GitHub Pages 展示交互原型。</p>
+        <p><span class="label">验证方法：</span>对比人工回复与工具辅助回复的平均首响时间和买家二次回复率。</p>
+      </div>
+
+      <div class="idea">
+        <h3>3. MOQ 与交期谈判计算尺</h3>
+        <p><span class="label">真实场景：</span>买家想压 MOQ，供应商想保毛利，但双方都没把让步空间讲透。</p>
+        <p><span class="label">用户痛点：</span>谈判靠经验，没有一个直观看板帮助解释取舍。</p>
+        <p><span class="label">工具形态：</span>一个桌面网页小工具，左右拖动 MOQ、交期、包装、认证投入，实时显示可能影响。</p>
+        <p><span class="label">体验亮点：</span>不是算精确价格，而是把影响关系和风险段位可视化。</p>
+        <p><span class="label">设计美感方向：</span>像精密仪表盘，信息密度高但克制，适合业务会议现场共享。</p>
+        <p><span class="label">免费线上发布/分享方式：</span>单页站点直接部署；可附可分享链接和 PNG 导出。</p>
+        <p><span class="label">验证方法：</span>请销售和采购各 5 人试用，观察是否帮助他们更快达成可谈区间。</p>
+      </div>
+
+      <div class="idea">
+        <h3>4. 桌面碎片转行动板</h3>
+        <p><span class="label">真实场景：</span>产品经理一天里会从微信、网页、邮件、会议、截图里收很多碎片想法。</p>
+        <p><span class="label">用户痛点：</span>能记下来，但很难快速变成下一步动作。</p>
+        <p><span class="label">工具形态：</span>一个桌面小面板，把粘贴进来的任何内容自动分成“判断、待验证、可发散、可立刻做”。</p>
+        <p><span class="label">体验亮点：</span>只有四个出口，不做复杂知识库，让人更快从记录走到行动。</p>
+        <p><span class="label">设计美感方向：</span>像桌面便签墙但更安静，弱投影、纸感背景、细线分区。</p>
+        <p><span class="label">免费线上发布/分享方式：</span>先做本地网页版，再部署成在线 demo 供团队共享。</p>
+        <p><span class="label">验证方法：</span>自己连续用 5 天，看是否减少“记了但没推进”的想法数量。</p>
+      </div>
+
+      <div class="idea">
+        <h3>5. 多语言采购术语解释卡</h3>
+        <p><span class="label">真实场景：</span>跨境买卖双方对 MOQ、lead time、tooling、compliance 的理解不总一致。</p>
+        <p><span class="label">用户痛点：</span>同一个词，双方脑中不是一个意思，沟通成本高。</p>
+        <p><span class="label">工具形态：</span>小型网页卡片库，输入术语返回简明解释、常见误解和建议问法。</p>
+        <p><span class="label">体验亮点：</span>不是翻译词典，而是站在谈生意角度解释“这个词会误会在哪”。</p>
+        <p><span class="label">设计美感方向：</span>像国际化样式手册，留白多、卡片轻、方便手机快速查。</p>
+        <p><span class="label">免费线上发布/分享方式：</span>静态网站即可，适合公开分享给团队或客户。</p>
+        <p><span class="label">验证方法：</span>看用户是否愿意在写询盘或回邮件前临时查一眼。</p>
+      </div>
+
+      <div class="idea">
+        <h3>6. 样品流程可视化追踪器</h3>
+        <p><span class="label">真实场景：</span>样品申请、打样、寄送、反馈分散在聊天和表格里，大家都容易忘。</p>
+        <p><span class="label">用户痛点：</span>不是做不了，而是状态不透明、责任不清楚。</p>
+        <p><span class="label">工具形态：</span>网页时间轴工具，围绕样品这一个流程做跟踪，不碰完整 CRM。</p>
+        <p><span class="label">体验亮点：</span>每个节点都要求留下一个“下一步承诺”和一个“阻塞原因”。</p>
+        <p><span class="label">设计美感方向：</span>轻时间轴加状态色块，克制商务风，不像复杂项目管理软件。</p>
+        <p><span class="label">免费线上发布/分享方式：</span>可先做本地 JSON 存储版并部署 demo；后续再考虑接账号。</p>
+        <p><span class="label">验证方法：</span>用真实样品项目跑一周，检查漏跟进次数是否下降。</p>
+      </div>
+
+      <h2>我最想先做的方向</h2>
+
+      <div class="card">
+        <h3>优先方向：AI 询盘准备层</h3>
+        <p>如果只能先做一个，我会先做“采购需求补问器”，也就是面向买家的 AI 询盘准备层。原因很简单：它站在成交最前面，能同时改善买家体验、供应商接待效率和平台撮合质量，而且边界相对清晰，不需要一上来就接支付、物流和复杂账号体系。</p>
+      </div>
+
+      <h2>第一版边界</h2>
+      <ul>
+        <li><span class="label">只服务一个动作：</span>把模糊采购需求整理成高质量 RFQ/询盘草案。</li>
+        <li><span class="label">只补关键字段：</span>品类、用途、数量级、认证、样品、交期、目标市场、定制需求、预算区间。</li>
+        <li><span class="label">只输出三类结果：</span>结构化询盘卡、待确认缺失项、建议优先联系的供应商能力标签。</li>
+        <li><span class="label">不做的事：</span>不自动承诺成交、不自动下单、不做正式报价、不处理支付和物流。</li>
+        <li><span class="label">形态：</span>先做网页 demo，支持手机打开；不接真实平台账号。</li>
+      </ul>
+
+      <h2>5-7 天验证计划</h2>
+      <ol>
+        <li><span class="label">第 1 天：</span>收集 20-30 条历史低质量询盘，归纳最常缺失的信息字段。</li>
+        <li><span class="label">第 2 天：</span>定义补问逻辑，写出 3 个典型品类的追问模板，例如包装、家居、机械配件。</li>
+        <li><span class="label">第 3 天：</span>做一个纯前端原型，完成输入、补问、结果卡片输出三段式流程。</li>
+        <li><span class="label">第 4 天：</span>找 3-5 位内部同事或熟悉采购流程的人试跑真实案例，观察卡点和不信任点。</li>
+        <li><span class="label">第 5 天：</span>对比“直接发原始需求”与“经补问后发出”的可理解度，让供应商侧同事评分。</li>
+        <li><span class="label">第 6 天：</span>补上解释卡片和缺失项提示，让用户知道为什么系统这样问、为什么还不能直接生成最终询盘。</li>
+        <li><span class="label">第 7 天：</span>决定是否继续做第二版。如果补问后的询盘明显更完整、供应商更愿意回复，就进入供应商候选匹配和首轮回应联动。</li>
+      </ol>
+
+      <h2>这次值得长期保留的观察</h2>
+      <ul>
+        <li>“AI 帮你买”在消费电商里看起来很顺，但 B2B 真正先成熟的是“AI 帮你准备买”。</li>
+        <li>买卖双方都需要助手，但一个偏“需求补齐”，一个偏“能力表达与回应组织”。</li>
+        <li>未来任何想接入 agent 的产品，今天都应该先把状态、字段、证据、授权边界做清楚。</li>
+        <li>桌面办公小工具的机会，不在于再做一个信息容器，而在于把高频碎任务变成舒服、短链、可解释的动作流。</li>
+      </ul>
+
+      <p class="small">本页基于 2026-06-10 可检索到的公开资料整理，重点是把资讯翻译成 B2B 跨境和桌面效率场景里的产品判断，而不是做资讯摘要。</p>
+    </article>
+  </main>
+</body>
+</html>
