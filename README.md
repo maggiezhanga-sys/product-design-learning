@@ -6,7 +6,7 @@ This folder is the live reading board for the automated product-design learning 
 
 New automation runs should append a short entry here and, when useful, create a dated note under `records/`.
 
-- 2026-06-10 15:31: 如果我是 B2B 跨境产品经理，今天这些资料会让我想到什么。见 `public/records/2026-06-10-1531.html`。
+- 2026-06-10 15:31: 把询盘做深：B2B 跨境 AI 的第一落点。见 `public/records/2026-06-10-1531.html`。
 
 ## Record Format
 
