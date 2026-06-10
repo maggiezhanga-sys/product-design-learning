@@ -3,33 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI 设计系统、B2B 跨境场景与桌面效率工具</title>
+  <title>如果我是 B2B 跨境产品经理，今天这些资料会让我想到什么</title>
   <style>
     :root {
       color-scheme: light;
       --bg: #f7f5f0;
       --paper: #ffffff;
       --text: #242424;
-      --muted: #69665f;
+      --muted: #68645d;
       --line: #ded8cc;
       --accent: #176f6b;
       --soft: #e7f2ef;
+      --warm: #fff1d8;
+      --ink: #2f4b4a;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
       background: var(--bg);
       color: var(--text);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
-      line-height: 1.72;
+      line-height: 1.78;
     }
 
     main {
-      width: min(880px, calc(100% - 32px));
+      width: min(920px, calc(100% - 32px));
       margin: 0 auto;
       padding: 28px 0 64px;
     }
@@ -49,28 +49,35 @@
     }
 
     article {
-      padding: 24px;
+      padding: 26px;
       background: var(--paper);
       border: 1px solid var(--line);
       border-radius: 8px;
     }
 
     h1 {
-      margin: 0 0 8px;
+      margin: 0 0 10px;
       font-size: clamp(28px, 7vw, 44px);
-      line-height: 1.12;
+      line-height: 1.14;
       letter-spacing: 0;
     }
 
     .meta {
-      margin: 0 0 26px;
+      margin: 0 0 22px;
       color: var(--muted);
       font-size: 14px;
     }
 
+    .summary {
+      margin: 18px 0 30px;
+      padding: 16px;
+      border-radius: 8px;
+      background: var(--soft);
+    }
+
     h2 {
-      margin: 32px 0 12px;
-      padding-top: 22px;
+      margin: 34px 0 14px;
+      padding-top: 24px;
       border-top: 1px solid var(--line);
       font-size: 24px;
       letter-spacing: 0;
@@ -82,37 +89,40 @@
       letter-spacing: 0;
     }
 
-    p {
-      margin: 8px 0;
-    }
+    p { margin: 8px 0; }
+    ol, ul { padding-left: 22px; }
+    li { margin: 8px 0; }
 
-    ol, ul {
-      padding-left: 22px;
-    }
-
-    li {
-      margin: 8px 0;
-    }
-
-    .idea {
+    .note, .idea {
       margin: 18px 0;
       padding: 16px;
       border-radius: 8px;
-      background: var(--soft);
+      border: 1px solid var(--line);
+      background: #fff;
     }
 
-    .idea h3 {
+    .idea {
+      background: var(--warm);
+    }
+
+    .note h3, .idea h3 {
       margin-top: 0;
       color: var(--accent);
     }
 
     .label {
       font-weight: 700;
+      color: var(--ink);
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 14px;
     }
 
     @media (max-width: 560px) {
       main {
-        width: min(100% - 22px, 880px);
+        width: min(100% - 22px, 920px);
         padding-top: 20px;
       }
 
@@ -126,117 +136,135 @@
   <main>
     <a class="back" href="../index.html">返回首页</a>
     <article>
-      <h1>AI 设计系统、B2B 跨境场景与桌面效率工具</h1>
-      <p class="meta">产品设计自动学习记录｜2026-06-10 15:31</p>
+      <h1>如果我是 B2B 跨境产品经理，今天这些资料会让我想到什么</h1>
+      <p class="meta">产品设计自动学习记录｜2026-06-10 15:31｜模拟真实产品经理的阅读思考</p>
 
-      <h2>本次信息源</h2>
+      <div class="summary">
+        <p><span class="label">我今天最该带走的判断：</span>B2B 跨境平台做 AI，不应该先想着“帮用户自动完成交易”，而应该先帮用户把交易前的信息差、信任差和沟通成本降下来。</p>
+        <p>如果我是这个平台的产品经理，我会把今天看到的资料落到三个方向：询盘怎么问得更完整，供应商怎么表达得更可信，AI 怎么辅助业务员但不越权。</p>
+      </div>
+
+      <h2>我会先问自己的 5 个问题</h2>
       <ol>
-        <li><a href="https://www.nngroup.com/articles/">The 3 Sizes of UX Copy</a>｜Nielsen Norman Group｜2026-06-08。微文案决定工具是否顺手，尤其是按钮、空状态、提示和错误说明。</li>
-        <li><a href="https://www.nngroup.com/articles/">The Four Design Jobs AI Created (So Far)</a>｜Nielsen Norman Group｜2026-06-05。AI 设计正在拆成提示、评估、整理、系统化等新工作。</li>
-        <li><a href="https://www.nngroup.com/articles/">Atomic Research: Small Insights, Big Impact</a>｜Nielsen Norman Group｜2026-06-01。用户研究卡片化适合沉淀 PM 证据库。</li>
-        <li><a href="https://www.smashingmagazine.com/articles/">How To Make Your Design System AI-Ready</a>｜Smashing Magazine｜2026-06-03。AI-ready 设计系统能减少生成结果漂移。</li>
-        <li><a href="https://www.smashingmagazine.com/articles/">Your Prototype Is Not Being Honest With Your Users</a>｜Smashing Magazine｜2026-05-25。原型不一定完整，但必须诚实。</li>
-        <li><a href="https://linear.app/changelog">Team documents / Shared skills for Linear Agent</a>｜Linear｜2026-06-04。团队文档和可复用 Agent 技能正在融合。</li>
-        <li><a href="https://www.notion.com/releases">3.5: Notion Developer Platform</a>｜Notion｜2026-05-13。文档空间正在变成 Agent 协作层。</li>
-        <li><a href="https://www.raycast.com/blog/the-new-raycast">The New Raycast</a>｜Raycast｜2026-05-14。统一入口、上下文和桌面原生体验是效率工具核心。</li>
-        <li><a href="https://www.raycast.com/blog/introducing-glaze">Introducing Glaze</a>｜Raycast｜2026-03-04。AI 对话生成真正桌面 App，指向个人工作流定制。</li>
-        <li><a href="https://www.businessinsider.com/figma-stock-sinks-google-vibe-design-stitch-ai-tool-2026-3">Google Stitch and vibe designing</a>｜Business Insider｜2026-03-19。UI 生成入口从线框转向业务目标和用户感受。</li>
-        <li><a href="https://www.businessinsider.com/ai-agents-one-person-companies-china-openclaw-alibaba-president-2026-3">China's one-person companies have exploded</a>｜Business Insider｜2026-03。Alibaba.com 相关观察显示，单人公司正借助 AI 处理上架、客服、税务等任务。</li>
-        <li><a href="https://www.techradar.com/pro/website-building/alibaba-and-wix-join-forces-promise-great-things-for-smbs">Alibaba and Wix join forces</a>｜TechRadar｜2025-07-04。B2B 平台正在向独立站、品牌展示和 AI 建站延展。</li>
-        <li><a href="https://arxiv.org/abs/2511.06262">GAIA: LLM-Human B2B Negotiation & Screening</a>｜arXiv｜2025-11-09。B2B AI 谈判需要信息门槛、授权边界、人类监督和审计。</li>
+        <li>买家在发询盘前，究竟缺哪些采购知识？这些缺口能不能被产品提前补上？</li>
+        <li>供应商不是没有能力，而是不会表达能力，这件事能不能产品化？</li>
+        <li>AI 回复询盘时，哪些话可以自动说，哪些话必须让人确认？</li>
+        <li>我们现在的产品体验，是在帮用户更快完成交易，还是只是让页面看起来更智能？</li>
+        <li>如果我要做一个免费可分享的小工具，哪个场景最容易验证价值？</li>
       </ol>
 
-      <h2>趋势观察</h2>
-      <h3>1. AI 设计从“生成稿子”走向“维护系统”</h3>
-      <p>AI 设计的重点正在从快速出图变成稳定复用团队组件、token、规范和品牌语气。对 B2B 跨境平台来说，商品详情、供应商证据、询盘模板、运营物料都需要更机器可读。</p>
+      <h2>资料不是重点，我看到后的联想才是重点</h2>
 
-      <h3>2. 办公产品正在从“信息管理”变成“上下文调度”</h3>
-      <p>Linear、Notion、Raycast 都在减少跨工具切换。真正的效率不是多一个文档库，而是让相关背景、模板、历史决策和下一步动作都在手边。</p>
+      <div class="note">
+        <h3>1. 看到“UX 微文案”，我想到的是询盘表单里的每一句提示</h3>
+        <p><span class="label">资料来源：</span><a href="https://www.nngroup.com/articles/">Nielsen Norman Group 关于 UX copy 的文章</a>。</p>
+        <p><span class="label">我看到什么：</span>文章讲文案有不同尺度，尤其是按钮、提示、错误说明这些小文案，会直接影响用户能不能顺利完成任务。</p>
+        <p><span class="label">我联想到：</span>跨境买家发询盘时，很多人不是懒，而是不知道该提供什么信息。比如买机器，可能要写用途、产能、电压、目的港；买包装，可能要写尺寸、材质、数量、印刷方式。表单如果只写“Please describe your request”，其实是在把专业负担丢给买家。</p>
+        <p><span class="label">产品机会：</span>询盘表单里的提示文案可以按品类动态变化，不是统一一个大文本框。每个字段旁边都用买家听得懂的话解释“为什么要填”。</p>
+        <p><span class="label">我会怎么验证：</span>找 3 个高频品类，各拿 20 条历史询盘，看低质量询盘主要缺什么信息，再改写字段提示，观察补全率和供应商追问次数。</p>
+      </div>
 
-      <h3>3. 真实体验比漂亮原型更重要</h3>
-      <p>原型、AI 生成稿和桌面工具都需要清楚表达状态、边界和可撤销性。美感不是装饰，而是让用户愿意安心地反复使用。</p>
+      <div class="note">
+        <h3>2. 看到“AI 设计新工作”，我想到 PM 的价值会从写需求变成定义边界</h3>
+        <p><span class="label">资料来源：</span><a href="https://www.nngroup.com/articles/">Nielsen Norman Group 关于 AI 设计岗位变化的文章</a>。</p>
+        <p><span class="label">我看到什么：</span>AI 不是替代一个完整岗位，而是把提示、评估、整理、系统化这些工作拆出来。</p>
+        <p><span class="label">我联想到：</span>如果平台要做 AI 询盘回复，PM 不能只写“支持 AI 自动回复买家”。更重要的是定义：哪些场景能自动回复，哪些必须转人工，哪些词属于高风险承诺。</p>
+        <p><span class="label">产品机会：</span>做一套“贸易谈判边界卡”。比如价格、付款方式、交期、认证、赔付、独家授权，都不能让 AI 随便承诺。</p>
+        <p><span class="label">我会怎么验证：</span>用历史业务员回复做离线检测，看规则能不能抓出可能越权的话，再请业务主管判断误报和漏报。</p>
+      </div>
 
-      <h3>4. B2B 跨境平台的 AI 机会在于降低交易不确定性</h3>
-      <p>找货、验厂、询盘、报价、样品、支付、物流、售后和复购构成完整贸易链路。AI 如果只做商品推荐，很容易变成更聪明的信息流；更高价值是帮助买卖双方建立信任、补齐信息和控制承诺边界。</p>
+      <div class="note">
+        <h3>3. 看到“Atomic Research”，我想到 PM 最缺的是可复用证据</h3>
+        <p><span class="label">资料来源：</span><a href="https://www.nngroup.com/articles/">Nielsen Norman Group 关于 Atomic Research 的文章</a>。</p>
+        <p><span class="label">我看到什么：</span>用户研究不要只沉淀成长文档，而要拆成小颗粒、可追溯的证据。</p>
+        <p><span class="label">我联想到：</span>我们做 B2B 功能时，需求经常来自客服反馈、销售反馈、买家访谈、供应商投诉、竞品截图。问题是这些证据散落各处，评审时很难快速说清楚“这个需求为什么重要”。</p>
+        <p><span class="label">产品机会：</span>做一个 PM 证据卡片夹。每张卡记录来源、角色、场景、痛点、影响指标、相关页面。写 PRD 时可以直接引用。</p>
+        <p><span class="label">我会怎么验证：</span>拿最近 3 个需求复盘，看如果当时有证据卡，评审沟通能不能少一轮。</p>
+      </div>
 
-      <h2>发散想法</h2>
+      <div class="note">
+        <h3>4. 看到“AI-ready 设计系统”，我想到供应商内容也需要 AI-ready</h3>
+        <p><span class="label">资料来源：</span><a href="https://www.smashingmagazine.com/articles/">Smashing Magazine 关于 AI-ready design system 的文章</a>。</p>
+        <p><span class="label">我看到什么：</span>AI 要稳定生成好结果，前提是设计系统、组件说明、边界和 token 足够清楚。</p>
+        <p><span class="label">我联想到：</span>供应商详情页也有类似问题。很多供应商只会写“high quality, best price”，但买家真正关心的是认证、产能、质检、交期、出口经验、样品周期。平台如果没有结构化这些内容，AI 也只能生成空泛文案。</p>
+        <p><span class="label">产品机会：</span>供应商可信表达生成器。不是帮商家吹牛，而是把可证明的能力组织成买家能判断的内容模块。</p>
+        <p><span class="label">我会怎么验证：</span>让买家侧同事对比改写前后页面，判断哪个更可信，并标出还缺哪些证明材料。</p>
+      </div>
+
+      <div class="note">
+        <h3>5. 看到“原型要诚实”，我想到 AI 功能上线也要诚实</h3>
+        <p><span class="label">资料来源：</span><a href="https://www.smashingmagazine.com/articles/">Smashing Magazine 关于原型诚实度的文章</a>。</p>
+        <p><span class="label">我看到什么：</span>原型如果假装所有功能都能用，会误导测试用户，也会污染反馈。</p>
+        <p><span class="label">我联想到：</span>AI 功能也一样。如果我们在页面上说“AI 帮你完成报价”，用户可能以为平台对价格和交期负责。但实际上，B2B 交易里的很多承诺必须由供应商确认。</p>
+        <p><span class="label">产品机会：</span>AI 功能要在界面上明确区分“建议”“草稿”“已确认”。这三个状态不能混在一起。</p>
+        <p><span class="label">我会怎么验证：</span>做两版文案测试，看用户是否能正确理解 AI 输出的责任边界。</p>
+      </div>
+
+      <div class="note">
+        <h3>6. 看到 Linear、Notion、Raycast，我想到 PM 需要一个“上下文工作台”</h3>
+        <p><span class="label">资料来源：</span><a href="https://linear.app/changelog">Linear Changelog</a>、<a href="https://www.notion.com/releases">Notion Releases</a>、<a href="https://www.raycast.com/blog">Raycast Blog</a>。</p>
+        <p><span class="label">我看到什么：</span>这些产品都在把文档、任务、AI、快捷入口和个人工作流串起来。</p>
+        <p><span class="label">我联想到：</span>PM 的低效不只是写得慢，而是上下文总断。刚看完竞品，转头去写需求，截图、链接、用户反馈、历史结论又要重新找。</p>
+        <p><span class="label">产品机会：</span>做一个桌面上下文托盘。它不一定一开始就是桌面客户端，可以先是网页：粘贴资料、自动分组、生成需求背景。</p>
+        <p><span class="label">我会怎么验证：</span>让自己用一周，看写需求背景的时间是否减少，引用证据是否变多。</p>
+      </div>
+
+      <div class="note">
+        <h3>7. 看到 Alibaba.com 的 AI 和 Wix 合作，我想到平台边界在外扩</h3>
+        <p><span class="label">资料来源：</span><a href="https://www.businessinsider.com/ai-agents-one-person-companies-china-openclaw-alibaba-president-2026-3">Business Insider 关于 Alibaba.com 和单人公司的报道</a>、<a href="https://www.techradar.com/pro/website-building/alibaba-and-wix-join-forces-promise-great-things-for-smbs">TechRadar 关于 Alibaba 与 Wix 合作的报道</a>。</p>
+        <p><span class="label">我看到什么：</span>AI 正在帮助小商家处理上架、客服、税务、建站等复杂工作。B2B 平台也在连接独立站和品牌展示。</p>
+        <p><span class="label">我联想到：</span>竞品不一定只在站内搜索和询盘上竞争，它可能在帮供应商完成更完整的出海经营：建站、获客、内容、客服、交易。</p>
+        <p><span class="label">产品机会：</span>供应商成长工具不要只围绕“发品”，还可以围绕“如何被海外买家信任”和“如何把站内资产复用到站外”。</p>
+        <p><span class="label">我会怎么验证：</span>访谈供应商：他们最想把平台上的哪些内容复用到独立站、邮件、社媒或展会资料里。</p>
+      </div>
+
+      <h2>我会优先立项验证的 3 个小工具</h2>
+
       <div class="idea">
-        <h3>1. PM 证据卡片夹</h3>
-        <p><span class="label">问题/机会：</span>用户访谈、客服反馈、数据截图、竞品观察散落各处，写需求时找不到证据。</p>
-        <p><span class="label">最小可行形态：</span>纯前端网页 + 本地 Markdown/JSON 导入导出，先支持手动粘贴和标签。</p>
-        <p><span class="label">免费发布：</span>GitHub + Cloudflare 静态站，团队可共享链接和导出文件。</p>
+        <h3>1. 跨境询盘质量助手</h3>
+        <p><span class="label">真实场景：</span>买家只写一句“send me price”，供应商需要追问尺寸、材质、数量、目的港、认证、交期。</p>
+        <p><span class="label">工具形态：</span>一个网页表单。买家填采购意图，工具提示缺失信息，并生成一段完整英文询盘。</p>
+        <p><span class="label">体验亮点：</span>不要像考试表格，要像采购助理在旁边提醒：“如果你补充目的港，供应商能更快给到运费和交期。”</p>
+        <p><span class="label">设计美感：</span>清爽采购清单，进度条显示完整度，缺失项用温和提示，不制造压迫感。</p>
+        <p><span class="label">免费分享：</span>纯前端部署到 Cloudflare；品类模板存在 GitHub JSON 里。</p>
+        <p><span class="label">验证方法：</span>用 30 条历史询盘对比，观察供应商追问次数是否下降。</p>
       </div>
 
       <div class="idea">
-        <h3>2. 需求微文案检查器</h3>
-        <p><span class="label">问题/机会：</span>“优化体验”“提升效率”等表达太虚，评审时容易反复追问。</p>
-        <p><span class="label">最小可行形态：</span>单页规则检查器，标出模糊词并建议改成用户动作、系统反馈和验收标准。</p>
-        <p><span class="label">免费发布：</span>Cloudflare 静态站，规则库放 GitHub，便于团队共建。</p>
+        <h3>2. 供应商可信表达生成器</h3>
+        <p><span class="label">真实场景：</span>供应商有工厂、认证和出口经验，但页面只会写“质量好、价格低”。</p>
+        <p><span class="label">工具形态：</span>供应商回答几个结构化问题，工具输出公司简介、商品页信任模块、买家 FAQ、邮件短介绍。</p>
+        <p><span class="label">体验亮点：</span>帮供应商把“我很可靠”变成“买家能判断的证据”。</p>
+        <p><span class="label">设计美感：</span>像 B2B 商品详情页的信任模块预览，稳重、清楚、有证据感。</p>
+        <p><span class="label">免费分享：</span>先做公开网页，生成内容可复制到平台详情页、独立站、飞书文档或邮件。</p>
+        <p><span class="label">验证方法：</span>找 10 个供应商页面，请业务和买家侧同事判断改写前后哪个更可信。</p>
       </div>
 
       <div class="idea">
-        <h3>3. 桌面上下文托盘</h3>
-        <p><span class="label">问题/机会：</span>写方案时频繁切浏览器、聊天、文档和表格，真正耗时的是重新找回上下文。</p>
-        <p><span class="label">最小可行形态：</span>Web 版手动粘贴托盘，后续再考虑 Electron/Tauri 桌面版。</p>
-        <p><span class="label">设计美感：</span>窄侧栏、低饱和背景、按时间分组，像工作桌边的一叠便签。</p>
+        <h3>3. 贸易谈判边界卡</h3>
+        <p><span class="label">真实场景：</span>AI 帮业务员回复“7 天发货、30% 折扣”，但实际交期和折扣都需要确认。</p>
+        <p><span class="label">工具形态：</span>把回复内容粘贴进去，工具标出：可自动回复、需人工确认、禁止直接承诺。</p>
+        <p><span class="label">体验亮点：</span>AI 是副驾驶，不是替业务员拍板的人。</p>
+        <p><span class="label">设计美感：</span>像风控清单，不做吓人的大红警告；高风险清楚，普通建议克制。</p>
+        <p><span class="label">免费分享：</span>内部静态网页，不存储文本，浏览器本地检查。</p>
+        <p><span class="label">验证方法：</span>用历史询盘回复离线测试，看能否抓出高风险承诺。</p>
       </div>
 
-      <div class="idea">
-        <h3>4. AI 生成稿审稿台</h3>
-        <p><span class="label">问题/机会：</span>AI 能生成页面和文案，但 PM/设计师要判断哪里不可靠、哪里不像品牌、哪里用户会困惑。</p>
-        <p><span class="label">最小可行形态：</span>Markdown 检查模板 + 静态网页表单，先不做自动识图。</p>
-        <p><span class="label">验证：</span>每条建议必须能定位到页面区域或文案句子，避免空泛评分。</p>
-      </div>
+      <h2>如果只选一个，我会先做哪个</h2>
+      <p>我会先做“跨境询盘质量助手”。理由很现实：它不需要复杂权限，不需要接交易系统，不需要处理敏感账号，也不需要一开始就接大模型。只要把品类模板和询盘结构做好，就能验证价值。</p>
+      <p>更重要的是，它同时对买家、供应商和平台都有价值：买家问得更清楚，供应商回复更快，平台拿到更结构化的采购意图。这个方向小，但不虚。</p>
 
-      <div class="idea">
-        <h3>5. 原型诚实度标注器</h3>
-        <p><span class="label">问题/机会：</span>假数据和不可点击路径会让用户测试反馈被污染。</p>
-        <p><span class="label">最小可行形态：</span>测试说明生成器，标注真实数据、模拟数据、可点击、不可点击和关键假设。</p>
-        <p><span class="label">免费发布：</span>静态网页，输出可贴到 Figma、飞书或 Notion 的说明。</p>
-      </div>
+      <h2>下一步我会怎么推进</h2>
+      <ol>
+        <li>先选 3 个品类：一个标准品、一个定制品、一个高客单复杂品。</li>
+        <li>每个品类整理 8-12 个关键询盘字段，字段旁边写清楚“为什么要填”。</li>
+        <li>拿历史询盘做完整度评分，看看低质量询盘主要缺什么。</li>
+        <li>做一个静态网页原型，手机也能打开，先让同事试用。</li>
+        <li>验证指标先别复杂，就看三个：信息完整度、供应商追问次数、生成询盘是否像真人会发。</li>
+      </ol>
 
-      <div class="idea">
-        <h3>6. 个人技能指令库</h3>
-        <p><span class="label">问题/机会：</span>个人 AI 提示词和工作习惯很难沉淀成团队可复用能力。</p>
-        <p><span class="label">最小可行形态：</span>Markdown 技能卡目录 + 搜索网页，先支持复制提示词。</p>
-        <p><span class="label">风险：</span>容易变成提示词垃圾堆，需要标记已验证、待优化、弃用。</p>
-      </div>
-
-      <div class="idea">
-        <h3>7. 跨境询盘质量助手</h3>
-        <p><span class="label">问题/机会：</span>B2B 买家常不知道怎么问，供应商收到的信息不完整，导致反复确认。</p>
-        <p><span class="label">最小可行形态：</span>网页表单 + 行业模板库，生成询盘完整度评分和英文询盘。</p>
-        <p><span class="label">设计美感：</span>像清爽采购清单，用进度条显示完整度，缺失项用温和提示。</p>
-      </div>
-
-      <div class="idea">
-        <h3>8. 供应商可信表达生成器</h3>
-        <p><span class="label">问题/机会：</span>中小供应商可能能力不差，但不会把工厂、认证、交付、质检表达成海外买家能快速信任的内容。</p>
-        <p><span class="label">最小可行形态：</span>静态网页 + 结构化问题模板，生成可信模块、公司简介、买家 FAQ 和短版邮件介绍。</p>
-        <p><span class="label">风险：</span>避免夸大宣传，每个可信表达都要求绑定可证明材料。</p>
-      </div>
-
-      <div class="idea">
-        <h3>9. 贸易谈判边界卡</h3>
-        <p><span class="label">问题/机会：</span>AI 可以帮业务员回复询盘，但价格、付款、交期、赔付等问题容易越权。</p>
-        <p><span class="label">最小可行形态：</span>Markdown 模板 + 网页检查器，输入回复内容后标出可能越权的承诺。</p>
-        <p><span class="label">体验亮点：</span>让 AI 成为业务员的副驾驶，而不是擅自谈判的替身。</p>
-      </div>
-
-      <h2>可长期记忆的结论</h2>
-      <ul>
-        <li>AI 提效的关键不只是生成速度，而是上下文、约束、复用和验证。</li>
-        <li>对 B2B 跨境电商而言，最值得追踪的 AI 机会是信任、筛选、询盘质量、谈判边界和供应商表达。</li>
-        <li>桌面办公小工具最有机会的方向，是减少切换、找回上下文、把个人经验变成可执行模板。</li>
-        <li>美感要服务于安心感：克制、清楚、可撤销、能解释状态，比炫技动画更重要。</li>
-      </ul>
-
-      <h2>下次继续追踪</h2>
-      <ul>
-        <li>Figma、Google Stitch、Raycast Glaze 这类 AI 生成应用的真实可用性。</li>
-        <li>Notion Developer Platform 和 Linear Agent Skills 对团队知识库形态的影响。</li>
-        <li>阿里国际站在 AI 工具、商家独立站、单人公司运营、RFQ/询盘辅助上的动作。</li>
-      </ul>
+      <h2>资料来源</h2>
+      <p class="small">参考 NN/g、Smashing Magazine、Linear、Notion、Raycast、Business Insider、TechRadar、arXiv 等公开内容。本记录不是逐句翻译，而是模拟 B2B 跨境电商平台产品经理阅读这些资料后的业务联想和落地判断。</p>
     </article>
   </main>
 </body>
