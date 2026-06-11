@@ -4,6 +4,7 @@ This repository is the publishing directory for the automated product-design lea
 
 ## Latest Records
 
+- 2026-06-11 19:13: 先别急着自动成交，先把采购上下文接起来。见 `public/records/2026-06-11-1913.html`。
 - 2026-06-10 18:47: 先补信息差，再谈 AI 代采成交。见 `public/records/2026-06-10-1847.html`。
 - 2026-06-10 16:08: 供应商可信表达，不是把证书堆满。见 `public/records/2026-06-10-1608.html`。
 - 2026-06-10 15:31: 把询盘做深：B2B 跨境 AI 的第一落点。见 `public/records/2026-06-10-1531.html`。
