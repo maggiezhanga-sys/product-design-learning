@@ -7,14 +7,14 @@
   <style>
     :root {
       color-scheme: light;
-      --bg: #f4f0e8;
-      --panel: #fffdf8;
-      --text: #1f1f1f;
-      --muted: #655f56;
-      --line: #ddd3c4;
-      --accent: #165d59;
-      --accent-soft: #dfeeea;
-      --warm: #fff0d9;
+      --bg: #f4efe7;
+      --panel: #fffdf9;
+      --text: #1e2321;
+      --muted: #626056;
+      --line: #ddd4c7;
+      --accent: #1f665a;
+      --accent-soft: #e4efe9;
+      --warm: #fbefdc;
     }
 
     * { box-sizing: border-box; }
@@ -23,10 +23,10 @@
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
       background:
-        radial-gradient(circle at top left, rgba(255, 255, 255, 0.8), transparent 36%),
-        linear-gradient(180deg, #f7f3ec 0%, var(--bg) 100%);
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.86), transparent 34%),
+        linear-gradient(180deg, #f8f4ec 0%, var(--bg) 100%);
       color: var(--text);
-      line-height: 1.68;
+      line-height: 1.72;
     }
 
     main {
@@ -36,7 +36,7 @@
     }
 
     header {
-      padding: 10px 0 24px;
+      padding: 8px 0 24px;
       border-bottom: 1px solid var(--line);
     }
 
@@ -45,6 +45,7 @@
       color: var(--accent);
       font-size: 13px;
       font-weight: 700;
+      letter-spacing: 0.04em;
     }
 
     h1 {
@@ -54,7 +55,7 @@
     }
 
     .intro {
-      max-width: 720px;
+      max-width: 760px;
       margin: 16px 0 0;
       color: var(--muted);
       font-size: 17px;
@@ -70,7 +71,8 @@
       font-size: 22px;
     }
 
-    .record-list {
+    .record-list,
+    .grid {
       display: grid;
       gap: 12px;
     }
@@ -79,11 +81,11 @@
       display: block;
       padding: 16px;
       border: 1px solid var(--line);
-      border-radius: 10px;
+      border-radius: 12px;
       background: var(--panel);
       color: inherit;
       text-decoration: none;
-      box-shadow: 0 8px 22px rgba(27, 35, 31, 0.04);
+      box-shadow: 0 10px 26px rgba(27, 35, 31, 0.05);
     }
 
     .record strong {
@@ -98,27 +100,29 @@
     }
 
     .grid {
-      display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 12px;
+    }
+
+    .note,
+    .idea {
+      padding: 16px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
     }
 
     .note {
-      padding: 16px;
-      border-radius: 10px;
       background: var(--accent-soft);
-      border: 1px solid rgba(22, 93, 89, 0.1);
-    }
-
-    .note b {
-      color: var(--accent);
+      border-color: rgba(31, 102, 90, 0.12);
     }
 
     .idea {
-      padding: 18px;
-      border-radius: 10px;
       background: var(--warm);
-      border: 1px solid #f1dfbf;
+      border-color: #eedfc3;
+    }
+
+    .note b,
+    .idea b {
+      color: var(--accent);
     }
 
     footer {
@@ -129,7 +133,7 @@
 
     @media (max-width: 560px) {
       main {
-        width: min(100% - 22px, 960px);
+        width: min(100% - 20px, 960px);
         padding-top: 22px;
       }
 
@@ -144,15 +148,22 @@
     <header>
       <p class="eyebrow">Product Design Learning</p>
       <h1>产品设计学习记录</h1>
-      <p class="intro">这里持续沉淀产品设计、UX、B2B 跨境电商、桌面效率工具与 AI 工作流的观察。重点不是搬运资讯，而是把外部变化翻译成“真实用户为什么会需要”和“下一步先做什么更有价值”。</p>
+      <p class="intro">
+        这里持续沉淀产品设计、UX、B2B 跨境电商、桌面效率工具与 AI 工作流的观察。重点不是搬运资讯，而是把外部变化翻译成
+        “真实用户为什么会需要” 和 “下一步先做什么更有价值”。
+      </p>
     </header>
 
     <section>
       <h2>最新记录</h2>
       <div class="record-list">
+        <a class="record" href="./records/2026-06-12-1802.html">
+          <strong>买家入口外移后，平台要抢供应商证据层</strong>
+          <span>从 Google Universal Cart、AI Overviews、Alibaba.com 单人公司与 Raycast Glaze 出发，我更确信 B2B 平台下一步该做的是可被 AI 读取、可被买家信任、可被供应商维护的证据层。</span>
+        </a>
         <a class="record" href="./records/2026-06-12-0930.html">
           <strong>把采购入口前移到准备层，而不是成交层</strong>
-          <span>从 UCP、Shopify agentic commerce、Alibaba.com “一人公司”、Raycast Glaze 和 agent UX 研究出发，我更确认 B2B 跨境 AI 的第一价值是补齐采购上下文和供应商证据。</span>
+          <span>从 UCP、Shopify agentic commerce、Alibaba.com “一人公司”、Raycast Glaze 和 agent UX 研究出发，判断 B2B 跨境 AI 的第一价值仍是补齐采购上下文与供应商证据。</span>
         </a>
         <a class="record" href="./records/2026-06-11-1913.html">
           <strong>先别急着自动成交，先把采购上下文接起来</strong>
@@ -186,12 +197,14 @@
     <section>
       <h2>这个学习板当前更看重什么</h2>
       <div class="idea">
-        我更在意那些能解释“为什么用户现在就需要”的变化。比如 AI 是否真的减少了采购补问成本，是否让供应商更容易表达自己，是否让桌面工具从记录容器变成动作入口。只要判断有落地价值，哪怕资料不多，也比堆很多无关资讯更有用。
+        我更在意那些能解释“用户为什么现在就会需要”的变化。比如 AI 是否开始改写买家的采购入口，
+        供应商是否更需要被机器理解的可信表达，桌面小工具是否能从记录容器变成动作入口。
+        只要判断有落地价值，哪怕资料不多，也比堆很多无关资讯更有用。
       </div>
     </section>
 
     <footer>
-      站点目录：`product-design-learning/public`。发布目标为静态网页，适合手机直接阅读与分享。
+      站点目录：<code>product-design-learning/public</code>。发布目标为静态网页，适合手机直接阅读与分享。
     </footer>
   </main>
 </body>
