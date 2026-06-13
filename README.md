@@ -4,6 +4,7 @@ This repository is the publishing directory for the automated product-design lea
 
 ## Latest Records
 
+- 2026-06-13 18:04: 别抢 AI 下单，先抢采购决策编排层。See `public/records/2026-06-13-1804.html`.
 - 2026-06-12 18:02: 买家入口外移后，平台要抢供应商证据层。See `public/records/2026-06-12-1802.html`.
 - 2026-06-12 09:30: 把采购入口前移到准备层，而不是成交层。See `public/records/2026-06-12-0930.html`.
 - 2026-06-11 19:13: 先别急着自动成交，先把采购上下文接起来。See `public/records/2026-06-11-1913.html`.
